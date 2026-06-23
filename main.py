@@ -14,7 +14,7 @@ from PIL import Image, ImageFilter
 # =====================================================
 
 st.set_page_config(
-    page_title="Jogo das Dicas",
+    page_title="COPA E.SALES 2026",
     layout="wide"
 )
 
@@ -221,7 +221,7 @@ if st.session_state.botao_jogar_novamente:
     escolher_nova_imagem()
 
 if not st.session_state.jogo_iniciado:
-    st.title("🎯 Jogo das Dicas")
+    st.title("🎯 COPA E.SALES 2026")
     st.write("A IA analisa **visualmente** cada imagem para gerar dicas personalizadas.")
     if st.button("Iniciar Jogo", use_container_width=True):
         st.session_state.jogo_iniciado = True
