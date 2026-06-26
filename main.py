@@ -14,12 +14,12 @@ from PIL import Image, ImageFilter
 # =====================================================
 
 st.set_page_config(
-    page_title="COPA E.SALES 2026",
+    page_title="Jogo das Dicas",
     layout="wide"
 )
 
 # ================== GROQ API KEY ==================
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "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"
 
 client = Groq(api_key=GROQ_API_KEY)
 
@@ -221,7 +221,7 @@ if st.session_state.botao_jogar_novamente:
     escolher_nova_imagem()
 
 if not st.session_state.jogo_iniciado:
-    st.title("🎯 COPA E.SALES 2026")
+    st.title("🎯 Jogo das Dicas")
     st.write("A IA analisa **visualmente** cada imagem para gerar dicas personalizadas.")
     if st.button("Iniciar Jogo", use_container_width=True):
         st.session_state.jogo_iniciado = True
